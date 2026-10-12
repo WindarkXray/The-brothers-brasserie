@@ -1,0 +1,25 @@
+Les photos actuelles viennent d’Unsplash (libres de droits) et du site actuel du restaurant.
+Pour les remplacer par les vraies photos du client, déposez ici des .jpg avec exactement ces noms :
+
+facade.jpg            Accueil (La maison) + Contact
+burger.jpg            Accueil (incontournables)
+moules.jpg            Accueil + Carte (Moules)
+croquettes.jpg        Accueil + Carte (Entrées chaudes)
+entrecote.jpg         Accueil + Carte (Viandes)
+boulettes.jpg         Accueil
+gaufre.jpg            Accueil + Carte (Desserts)
+salade.jpg            Carte (Entrées froides)
+poisson.jpg           Carte (Poissons)
+terrasse.jpg          Accueil + Événements
+salle-privee.jpg      Accueil + Événements
+salle.jpg             Événements (privatisation)
+cocktail.jpg          Accueil
+hero.jpg              Accueil (grande photo sous le titre)
+biere.jpg             Accueil (Au fût)
+bar.jpg               Bar (bandeau)
+mojito.jpg            Bar
+mojito-royal.jpg      Bar
+mojito-sans-alcool.jpg Bar
+galerie-1.jpg à galerie-5.jpg   Accueil (mosaïque)
+
+Conseil : 1600 px de large maximum, compressées (squoosh.app), < 300 Ko chacune.

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Brothers Brasserie</title>
+<meta name="description" content="Brasserie belge à deux pas de la Grand-Place de Bruxelles : moules, croquettes de crevettes, burger The Brothers, bières belges au fût et cocktails. Réservation en ligne.">
+<meta name="theme-color" content="#f8f3ea">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Gloock&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{if(sessionStorage.getItem('tb-v'))document.documentElement.classList.add('visited');sessionStorage.setItem('tb-v','1')}catch(e){}</script>
+</head>
+<body class="page-accueil">
+<div class="curtain curtain--intro" aria-hidden="true"><div class="curtain-inner"><svg class="glass-loader" viewBox="0 0 46 70" aria-hidden="true"><defs><clipPath id="glc"><path d="M5 3h36l-4 63H9z"/></clipPath></defs><g clip-path="url(#glc)"><rect class="gl-fill" x="0" y="10" width="46" height="60" fill="#140d08"/></g><path d="M5 3h36l-4 63H9z" fill="none" stroke="#140d08" stroke-width="2"/></svg><span class="curtain-word">The Brothers</span><span class="mono">Brasserie · Bruxelles</span></div></div>
+<div id="top"></div>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="index.html" aria-label="The Brothers Brasserie, accueil"><b>The Brothers</b><span>BRASSERIE · BRUXELLES</span></a>
+    <nav class="nav-links" aria-label="Navigation principale"><a href="index.html" aria-current="page">Accueil</a><a href="carte.html">La Carte</a><a href="bar.html">Le Bar</a><a href="evenements.html">Événements</a><a href="contact.html">Contact</a></nav>
+    <span class="status" data-status>Lun–mar, jeu 12h–15h · 18h–22h</span>
+    <a class="btn" href="reservation.html" data-magnetic>Réserver</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="overlay"><span></span><span></span></button>
+  </div>
+</header>
+<div class="overlay dark" id="overlay" aria-hidden="true">
+  <nav aria-label="Menu mobile"><a href="index.html" aria-current="page"><span>Accueil</span></a><a href="carte.html"><span>La Carte</span></a><a href="bar.html"><span>Le Bar</span></a><a href="evenements.html"><span>Événements</span></a><a href="contact.html"><span>Contact</span></a></nav>
+  <a class="btn" href="reservation.html">Réserver une table <span class="arr">→</span></a>
+  <div class="overlay-foot"><span class="status" data-status></span><span class="mono muted">02 889 02 10</span></div>
+</div>
+<main id="contenu">
+
+<section class="hero">
+  <canvas id="bubbles" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-top">
+      <span class="hero-the" data-reveal>The</span>
+      <span class="mono muted" data-reveal=".1">Brasserie belge · Rue Chair et Pain · Bruxelles</span>
+    </div>
+    <h1 style="margin:0"><svg class="hero-word" viewBox="0 0 1000 232" role="img" aria-label="The Brothers">
+  <defs>
+    <clipPath id="clipWord"><text class="hw-text" x="500" y="214" text-anchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs">BROTHERS</text></clipPath>
+    <linearGradient id="beerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2b33d"/><stop offset=".45" stop-color="#e39a22"/><stop offset="1" stop-color="#8a4c0c"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#clipWord)">
+    <rect class="hw-empty" width="1000" height="232"/>
+    <g class="liquid-tilt"><g class="liquid">
+      <path class="wave--foam" d="M0,70 Q50.0,63 100.0,70 T200,70 Q250.0,63 300.0,70 T400,70 Q450.0,63 500.0,70 T600,70 Q650.0,63 700.0,70 T800,70 Q850.0,63 900.0,70 T1000,70 Q1050.0,63 1100.0,70 T1200,70 Q1250.0,63 1300.0,70 T1400,70 Q1450.0,63 1500.0,70 T1600,70 Q1650.0,63 1700.0,70 T1800,70 Q1850.0,63 1900.0,70 T2000,70 L2000,320 L0,320 Z" fill="#f1e7d0"/>
+      <path class="wave--beer" d="M0,86 Q62.5,80 125.0,86 T250,86 Q312.5,80 375.0,86 T500,86 Q562.5,80 625.0,86 T750,86 Q812.5,80 875.0,86 T1000,86 Q1062.5,80 1125.0,86 T1250,86 Q1312.5,80 1375.0,86 T1500,86 Q1562.5,80 1625.0,86 T1750,86 Q1812.5,80 1875.0,86 T2000,86 L2000,320 L0,320 Z" fill="url(#beerGrad)"/>
+      <g fill="rgba(255,236,190,.55)"><circle class="hw-bubble" cx="60" cy="235" r="3"/><circle class="hw-bubble" cx="130" cy="235" r="2"/><circle class="hw-bubble" cx="205" cy="235" r="4"/><circle class="hw-bubble" cx="290" cy="235" r="2.5"/><circle class="hw-bubble" cx="350" cy="235" r="3"/><circle class="hw-bubble" cx="430" cy="235" r="2"/><circle class="hw-bubble" cx="505" cy="235" r="3.5"/><circle class="hw-bubble" cx="570" cy="235" r="2"/><circle class="hw-bubble" cx="640" cy="235" r="3"/><circle class="hw-bubble" cx="720" cy="235" r="2.5"/><circle class="hw-bubble" cx="790" cy="235" r="3"/><circle class="hw-bubble" cx="860" cy="235" r="2"/><circle class="hw-bubble" cx="930" cy="235" r="3.5"/><circle class="hw-bubble" cx="965" cy="235" r="2"/></g>
+    </g></g>
+  </g>
+  <text class="hw-text hw-outline" x="500" y="214" text-anchor="middle" textLength="990" lengthAdjust="spacingAndGlyphs">BROTHERS</text>
+</svg></h1>
+    <div class="hero-bottom">
+      <p class="lede" data-split="load">Cuisine de brasserie, bières belges au <em>fût</em> et cocktails, à deux pas de la Grand-Place.</p>
+      <div>
+        <div class="hero-actions" data-reveal=".2">
+          <a class="btn" href="reservation.html" data-magnetic>Réserver une table <span class="arr">→</span></a>
+          <a class="btn btn--ghost" href="carte.html" data-magnetic>Voir la carte</a>
+        </div>
+        <div class="rating" data-reveal=".3"><strong>4,3</strong><span class="stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="half"></i></span><span>1 124 avis Google</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hero-media"><figure class="ph " data-img="images/hero.jpg|https://images.unsplash.com/photo-1574521091464-a55e7763c1e5?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/hero.jpg</figcaption></figure></div>
+
+<div class="marquee dark" aria-hidden="true"><div class="marquee-skew"><div class="marquee-track"><span>Moules marinières</span><span>Croquettes de crevettes grises</span><span>Américain minute</span><span>Karmeliet au fût</span><span>Boulettes sauce tomate</span><span>Gaufre de Bruxelles</span><span>Mojito Royal</span><span>Jambonneau à l'ancienne</span><span>Moules marinières</span><span>Croquettes de crevettes grises</span><span>Américain minute</span><span>Karmeliet au fût</span><span>Boulettes sauce tomate</span><span>Gaufre de Bruxelles</span><span>Mojito Royal</span><span>Jambonneau à l'ancienne</span></div></div></div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="intro">
+      <div class="intro-copy">
+        <p class="eyebrow">La maison</p>
+        <h2 class="display h2" data-split>Une brasserie de quartier au cœur de Bruxelles.</h2>
+        <p class="muted" data-reveal>Entre la Grand-Place et les Galeries Royales Saint-Hubert, The Brothers sert midi et soir une cuisine de brasserie belge préparée avec des légumes, des fruits et des viandes frais. Moules, croquettes de crevettes grises, américain préparé maison et gaufres de Bruxelles, avec quatre bières au fût pour accompagner.</p>
+        <a class="btn btn--ghost" href="carte.html" data-reveal style="margin-top:14px">Découvrir la carte <span class="arr">→</span></a>
+      </div>
+      <figure class="ph " data-img="images/facade.jpg|https://www.thebrothersbrasserie.be/wp-content/uploads/2020/02/outside.jpg|https://images.unsplash.com/photo-1790090750433-7496353f3e80?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/facade.jpg</figcaption></figure>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="4">4</b><span>bières belges au fût</span></div>
+      <div class="stat"><b data-count="18">18</b><span>bières en bouteille, trappistes compris</span></div>
+      <div class="stat"><b data-count="4.3">4,3</b><span>sur Google, plus de 1 100 avis</span></div>
+      <div class="stat"><b data-count="6">6</b><span>jours sur 7, service continu le week-end</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="hs" data-hscroll>
+  <div class="wrap hs-head">
+    <div><p class="eyebrow">Les incontournables</p><h2 class="display h2" data-split>Ce qu'on vient manger ici.</h2></div>
+    <a class="btn btn--ghost" href="carte.html" data-magnetic>Toute la carte <span class="arr">→</span></a>
+  </div>
+  <div class="hs-viewport"><div class="hs-track"><article class="dish"><a href="carte.html"><figure class="ph " data-img="images/burger.jpg|https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/burger.jpg</figcaption></figure>
+  <div class="dish-meta"><span class="mono">Viande</span><span class="price">22 €</span></div>
+  <h3 class="display h3">Le burger The Brothers</h3><p class="en">Angus irlandais, pain bio au sésame, cheddar, frites</p></a></article><article class="dish"><a href="carte.html"><figure class="ph " data-img="images/moules.jpg|https://images.unsplash.com/photo-1715249792920-bfe1a3b9d79e?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/moules.jpg</figcaption></figure>
+  <div class="dish-meta"><span class="mono">Moules</span><span class="price">26,50 €</span></div>
+  <h3 class="display h3">Moules marinières</h3><p class="en">Casserole de moules, frites maison</p></a></article><article class="dish"><a href="carte.html"><figure class="ph " data-img="images/croquettes.jpg|https://images.unsplash.com/photo-1767974963436-2208b3553561?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/croquettes.jpg</figcaption></figure>
+  <div class="dish-meta"><span class="mono">Entrée</span><span class="price">18 €</span></div>
+  <h3 class="display h3">Croquettes de crevettes grises</h3><p class="en">Persil frit, citron, salade</p></a></article><article class="dish"><a href="carte.html"><figure class="ph " data-img="images/entrecote.jpg|https://images.unsplash.com/photo-1720701247887-cab418baa6d6?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/entrecote.jpg</figcaption></figure>
+  <div class="dish-meta"><span class="mono">Viande</span><span class="price">30 €</span></div>
+  <h3 class="display h3">Entrecôte irlandaise</h3><p class="en">±300 g grillée, frites, salade</p></a></article><article class="dish"><a href="carte.html"><figure class="ph " data-img="images/boulettes.jpg|https://images.unsplash.com/photo-1768187067375-4cd5a79fec41?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/boulettes.jpg</figcaption></figure>
+  <div class="dish-meta"><span class="mono">Classique belge</span><span class="price">20 €</span></div>
+  <h3 class="display h3">Boulettes à la belge</h3><p class="en">Sauce tomate, frites</p></a></article><article class="dish"><a href="carte.html"><figure class="ph " data-img="images/gaufre.jpg|https://images.unsplash.com/photo-1562513872-634b8fae6dbe?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/gaufre.jpg</figcaption></figure>
+  <div class="dish-meta"><span class="mono">Dessert</span><span class="price">10 €</span></div>
+  <h3 class="display h3">Gaufre de Bruxelles</h3><p class="en">Glace vanille, chocolat, chantilly</p></a></article></div></div>
+  <div class="hs-progress" aria-hidden="true"><i></i></div>
+</section>
+
+<section class="section dark">
+  <div class="wrap">
+    <p class="eyebrow">Au fût</p>
+    <div class="fut-grid">
+      <div><h2 class="display h2" data-split style="margin-bottom:48px">Quatre pressions belges.</h2><div class="taps-list"><a class="tap-row" href="bar.html"><span class="tap-name">Stella Artois</span><span class="tap-info"><b>5 €</b><span class="mono">5,2 % · 25 cl</span></span></a><a class="tap-row" href="bar.html"><span class="tap-name">Hoegaarden Blanche</span><span class="tap-info"><b>5 €</b><span class="mono">4,9 % · 25 cl</span></span></a><a class="tap-row" href="bar.html"><span class="tap-name">Leffe Blonde</span><span class="tap-info"><b>6 €</b><span class="mono">6,6 % · 25 cl</span></span></a><a class="tap-row" href="bar.html"><span class="tap-name">Tripel Karmeliet</span><span class="tap-info"><b>6 €</b><span class="mono">8,4 % · 25 cl</span></span></a></div></div>
+      <figure class="ph " data-img="images/biere.jpg|https://images.unsplash.com/photo-1546622891-02c72c1537b6?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/biere.jpg</figcaption></figure>
+    </div>
+    <div class="split-cta"><p class="muted">Et 18 bouteilles : Chimay, Westmalle, Duvel, Kwak, Kriek Mort Subite…</p><a class="btn" href="bar.html" data-magnetic>Le bar <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+<section class="section rule">
+  <div class="wrap">
+    <p class="eyebrow">Pour toutes les occasions</p>
+    <h2 class="display h2" data-split style="margin-bottom:56px">Terrasse, salle privée et cocktails.</h2>
+    <div class="services" data-stagger>
+      <article class="service"><figure class="ph " data-img="images/terrasse.jpg|https://images.unsplash.com/photo-1775186569675-31d4916f3c90?auto=format&fit=crop&w=1600&q=80" data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/terrasse.jpg</figcaption></figure><span class="mono">Aux beaux jours</span><h3 class="display h3">La terrasse</h3><p>Une table dehors dans une rue piétonne du centre, pour un lunch ou un verre en fin de journée.</p></article>
+      <article class="service"><figure class="ph " data-img="images/salle-privee.jpg|https://images.unsplash.com/photo-1737140790906-14518fa29d1c?auto=format&fit=crop&w=1600&q=80" data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/salle-privee.jpg</figcaption></figure><span class="mono">Groupes & fêtes</span><h3 class="display h3">La salle privée</h3><p>Anniversaire, repas d'équipe, cérémonie : réservez la salle à manger privée ou toute la brasserie.</p></article>
+      <article class="service"><figure class="ph " data-img="images/cocktail.jpg|https://images.unsplash.com/photo-1568608275764-7a16d7fdfc56?auto=format&fit=crop&w=1600&q=80" data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/cocktail.jpg</figcaption></figure><span class="mono">Au bar</span><h3 class="display h3">Les cocktails</h3><p>Mojito, Mojito Royal au champagne, Aperol Spritz, Kir Royal, et un Mojito sans alcool.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section--tight">
+  <div class="wrap mosaic">
+    <figure class="ph " data-img="images/galerie-1.jpg|https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax data-speed=".2"><div class="ph-inner"></div><figcaption class="ph-tag">images/galerie-1.jpg</figcaption></figure>
+    <figure class="ph " data-img="images/galerie-2.jpg|https://images.unsplash.com/photo-1607179780236-b5d5eed4f6d6?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax data-speed=".6"><div class="ph-inner"></div><figcaption class="ph-tag">images/galerie-2.jpg</figcaption></figure>
+    <figure class="ph " data-img="images/galerie-3.jpg|https://images.unsplash.com/photo-1695406091840-5b820df68db0?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax data-speed=".35"><div class="ph-inner"></div><figcaption class="ph-tag">images/galerie-3.jpg</figcaption></figure>
+    <figure class="ph " data-img="images/galerie-4.jpg|https://images.unsplash.com/photo-1622140739492-f82f386260b5?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax data-speed=".15"><div class="ph-inner"></div><figcaption class="ph-tag">images/galerie-4.jpg</figcaption></figure>
+    <figure class="ph " data-img="images/galerie-5.jpg|https://images.unsplash.com/photo-1766050590622-cbec5103294b?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax data-speed=".45"><div class="ph-inner"></div><figcaption class="ph-tag">images/galerie-5.jpg</figcaption></figure>
+  </div>
+</section>
+
+<section class="section rule">
+  <div class="wrap infos">
+    <div>
+      <p class="eyebrow">Nous trouver</p>
+      <p class="addr" data-split>Rue Chair et Pain 7<br>1000 Bruxelles</p>
+      <p class="muted">À deux minutes à pied de la Grand-Place.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=The+Brothers+Brasserie+Rue+Chair+et+Pain+7+1000+Bruxelles" target="_blank" rel="noopener" data-magnetic>Itinéraire ↗</a><a class="btn btn--ghost" href="contact.html">Contact & accès</a></div>
+    </div>
+    <div>
+      <p class="eyebrow">Horaires <span class="status" data-status style="margin-left:10px"></span></p>
+      <ul class="hours"><li data-day="1"><span class="d">Lundi<em class="tag">Aujourd'hui</em></span><span class="t"><span>12h–15h</span><span>18h–22h</span></span></li><li data-day="2"><span class="d">Mardi<em class="tag">Aujourd'hui</em></span><span class="t"><span>12h–15h</span><span>18h–22h</span></span></li><li data-day="3" class="closed"><span class="d">Mercredi<em class="tag">Aujourd'hui</em></span><span class="t"><span>Fermé</span></span></li><li data-day="4"><span class="d">Jeudi<em class="tag">Aujourd'hui</em></span><span class="t"><span>12h–15h</span><span>18h–22h</span></span></li><li data-day="5"><span class="d">Vendredi<em class="tag">Aujourd'hui</em></span><span class="t"><span>12h–22h</span><small>non-stop</small></span></li><li data-day="6"><span class="d">Samedi<em class="tag">Aujourd'hui</em></span><span class="t"><span>12h–22h</span><small>non-stop</small></span></li><li data-day="0"><span class="d">Dimanche<em class="tag">Aujourd'hui</em></span><span class="t"><span>12h–22h</span><small>non-stop</small></span></li></ul>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer dark">
+  <div class="wrap foot-cta">
+    <h2 class="display" data-split>Une table vous attend.</h2>
+    <div class="foot-cta-actions"><a class="btn" href="reservation.html" data-magnetic>Réserver une table <span class="arr">→</span></a><span class="foot-phone"><span class="mono">ou par téléphone</span><b>02 889 02 10</b></span></div>
+  </div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="index.html" aria-label="The Brothers Brasserie, accueil"><b>The Brothers</b><span>BRASSERIE · BRUXELLES</span></a>
+      <p>Brasserie belge au cœur de Bruxelles. Cuisine maison, bières au fût et cocktails, midi et soir.</p>
+      <div class="socials"><a href="https://www.instagram.com/thebrothersbrasserie/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a><a href="https://www.facebook.com/thebrothers.brasserie" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.2V6.6c0-.7.4-1.1 1.2-1.1H17V2.2h-2.6C11.6 2.2 10.4 4 10.4 6.4v1.8H8v3.3h2.4V22H14V11.5h2.8l.4-3.3H14z"/></svg></a></div>
+    </div>
+    <div class="foot-col foot-nav"><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="carte.html">La Carte</a></li><li><a href="bar.html">Le Bar</a></li><li><a href="evenements.html">Événements</a></li><li><a href="reservation.html">Réserver</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="foot-col foot-contact"><h4>Nous trouver</h4><ul><li>Rue Chair et Pain 7<br>1000 Bruxelles</li><li>02 889 02 10</li><li>thebrothersbrasserie@<wbr>gmail.com</li><li><a href="https://www.google.com/maps/search/?api=1&query=The+Brothers+Brasserie+Rue+Chair+et+Pain+7+1000+Bruxelles" target="_blank" rel="noopener" style="color:var(--brass)">Itinéraire ↗</a></li></ul></div>
+    <div class="foot-col foot-hcol"><h4>Horaires</h4><ul class="foot-hours"><li><span>Lundi</span><span>12–15h · 18–22h</span></li><li><span>Mardi</span><span>12–15h · 18–22h</span></li><li><span>Mercredi</span><span>Fermé</span></li><li><span>Jeudi</span><span>12–15h · 18–22h</span></li><li><span>Vendredi</span><span>12h–22h</span></li><li><span>Samedi</span><span>12h–22h</span></li><li><span>Dimanche</span><span>12h–22h</span></li></ul><p style="margin-top:16px"><span class="status" data-status></span></p></div>
+  </div>
+  <div class="wrap foot-bar"><span>© 2026 The Brothers Brasserie · Tous droits réservés</span><span>Site réalisé par Benjamin Monteiro</span><a class="to-top" href="#top">Haut de page <span aria-hidden="true">↑</span></a></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

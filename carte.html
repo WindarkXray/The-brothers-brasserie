@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Carte · The Brothers Brasserie</title>
+<meta name="description" content="La carte de The Brothers Brasserie à Bruxelles : entrées, viandes, poissons, moules, desserts et menu enfant.">
+<meta name="theme-color" content="#f8f3ea">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Gloock&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{if(sessionStorage.getItem('tb-v'))document.documentElement.classList.add('visited');sessionStorage.setItem('tb-v','1')}catch(e){}</script>
+</head>
+<body class="page-carte">
+<div class="curtain" aria-hidden="true"><div class="curtain-inner"><svg class="glass-loader" viewBox="0 0 46 70" aria-hidden="true"><defs><clipPath id="glc"><path d="M5 3h36l-4 63H9z"/></clipPath></defs><g clip-path="url(#glc)"><rect class="gl-fill" x="0" y="10" width="46" height="60" fill="#140d08"/></g><path d="M5 3h36l-4 63H9z" fill="none" stroke="#140d08" stroke-width="2"/></svg><span class="curtain-word">The Brothers</span><span class="mono">Brasserie · Bruxelles</span></div></div>
+<div id="top"></div>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="index.html" aria-label="The Brothers Brasserie, accueil"><b>The Brothers</b><span>BRASSERIE · BRUXELLES</span></a>
+    <nav class="nav-links" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="carte.html" aria-current="page">La Carte</a><a href="bar.html">Le Bar</a><a href="evenements.html">Événements</a><a href="contact.html">Contact</a></nav>
+    <span class="status" data-status>Lun–mar, jeu 12h–15h · 18h–22h</span>
+    <a class="btn" href="reservation.html" data-magnetic>Réserver</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="overlay"><span></span><span></span></button>
+  </div>
+</header>
+<div class="overlay dark" id="overlay" aria-hidden="true">
+  <nav aria-label="Menu mobile"><a href="index.html"><span>Accueil</span></a><a href="carte.html" aria-current="page"><span>La Carte</span></a><a href="bar.html"><span>Le Bar</span></a><a href="evenements.html"><span>Événements</span></a><a href="contact.html"><span>Contact</span></a></nav>
+  <a class="btn" href="reservation.html">Réserver une table <span class="arr">→</span></a>
+  <div class="overlay-foot"><span class="status" data-status></span><span class="mono muted">02 889 02 10</span></div>
+</div>
+<main id="contenu">
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Midi & soir</p>
+    <h1 class="display h1" data-split="load">La Carte</h1>
+    <div class="row"><p class="lede" data-reveal=".1">Une cuisine de brasserie belge faite avec des produits frais.</p><p data-reveal=".2">Les plats sont servis avec leurs garnitures. Pensez à nous signaler vos allergies, l'équipe vous renseigne sur chaque plat.</p></div>
+  </div>
+</section>
+<div class="page-banner"><figure class="ph " data-img="images/moules.jpg|https://images.unsplash.com/photo-1715249792920-bfe1a3b9d79e?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/moules.jpg</figcaption></figure></div>
+<nav class="cat-nav" aria-label="Catégories de la carte"><div class="cat-scroll"><div class="cat-tabs"><a href="#entrees-chaudes">Entrées chaudes</a><a href="#entrees-froides">Entrées froides</a><a href="#viandes">Viandes</a><a href="#poissons">Poissons</a><a href="#moules">Moules</a><a href="#desserts">Desserts</a><a href="#enfants">Enfants</a><span class="cat-ink"></span></div></div></nav>
+<div class="wrap"><section class="menu-sec" id="entrees-chaudes">
+  <div class="menu-sec-head"><h2 class="display" data-split>Entrées chaudes</h2><p class="mono">Hot starters · Warme voorgerechten</p><figure class="ph " data-img="images/croquettes.jpg|https://images.unsplash.com/photo-1767974963436-2208b3553561?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/croquettes.jpg</figcaption></figure></div>
+  <ul class="items" data-stagger><li class="item"><h3>Assiette de légumes du marché <span class="badge badge--veg">Végé</span></h3><span class="price">14 €</span><p class=desc>Huile vierge aux herbes</p><p class="en">Market vegetables, herb virgin oil</p></li><li class="item"><h3>Poêlée de scampis à la crème d'ail</h3><span class="price">19 €</span><p class="en">Pan-fried scampi, garlic cream</p></li><li class="item"><h3>Foie gras poêlé</h3><span class="price">20 €</span><p class=desc>Sur toast de pain d'épices, confit d'oignons</p><p class="en">Pan-fried foie gras, gingerbread toast, onion confit</p></li><li class="item"><h3>Croquettes de crevettes grises <span class="badge">Signature</span></h3><span class="price">18 €</span><p class=desc>Salade, persil frit, citron</p><p class="en">Grey shrimp croquettes, fried parsley, lemon</p></li><li class="item"><h3>Ravioles à la truffe <span class="badge badge--veg">Végé</span></h3><span class="price">18 €</span><p class=desc>Crème, roquette, pignons de pin</p><p class="en">Truffle ravioli, cream, rocket, pine nuts</p></li><li class="item"><h3>Croustillant de chèvre chaud <span class="badge badge--veg">Végé</span></h3><span class="price">17 €</span><p class=desc>Caramélisé au miel</p><p class="en">Crispy warm goat cheese, honey</p></li><li class="item"><h3>Plateau apéritif</h3><span class="price">16 €</span><p class=desc>Fromage, poivrons doux, olives, nachos</p><p class="en">Cheese, sweet peppers, olives, nachos</p></li></ul>
+</section><section class="menu-sec" id="entrees-froides">
+  <div class="menu-sec-head"><h2 class="display" data-split>Entrées froides</h2><p class="mono">Cold starters · Koude voorgerechten</p><figure class="ph " data-img="images/salade.jpg|https://images.unsplash.com/photo-1523218435352-1086eda36298?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/salade.jpg</figcaption></figure></div>
+  <ul class="items" data-stagger><li class="item"><h3>Carpaccio de saumon fumé</h3><span class="price">18 €</span><p class=desc>Copeaux de parmesan, roquette</p><p class="en">Smoked salmon carpaccio, parmesan, rocket</p></li><li class="item"><h3>Salade The Brothers <span class="badge">Signature</span></h3><span class="price">20 €</span><p class=desc>Noix de Saint-Jacques, scampis, crevettes grises, pignons de pin</p><p class="en">Scallops, scampi, grey shrimps, pine nuts</p></li><li class="item"><h3>Salade César du chef</h3><span class="price">18 €</span><p class="en">Chef's Caesar salad</p></li><li class="item"><h3>Tomates mozzarella di bufala <span class="badge badge--veg">Végé</span></h3><span class="price">15 €</span><p class=desc>Basilic frais, pesto</p><p class="en">Buffalo mozzarella, tomatoes, basil, pesto</p></li><li class="item"><h3>Planche gourmande campagnarde</h3><span class="price">17 €</span><p class=desc>Assortiment de charcuteries, crudités</p><p class="en">Cold cuts and raw vegetables board</p></li></ul>
+</section><section class="menu-sec" id="viandes">
+  <div class="menu-sec-head"><h2 class="display" data-split>Viandes</h2><p class="mono">Meat · Vlees</p><figure class="ph " data-img="images/entrecote.jpg|https://images.unsplash.com/photo-1720701247887-cab418baa6d6?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/entrecote.jpg</figcaption></figure></div>
+  <ul class="items" data-stagger><li class="item"><h3>Américain minute</h3><span class="price">22 €</span><p class=desc>Préparé maison, frites et salade</p><p class="en">Steak tartare (raw beef), fries, salad</p></li><li class="item"><h3>Entrecôte de bœuf irlandais</h3><span class="price">30 €</span><p class=desc>±300 g grillée, frites, salade</p><p class="en">Irish beef rib-eye ±300 g, fries, salad</p></li><li class="item"><h3>Le fameux burger The Brothers <span class="badge">Signature</span></h3><span class="price">22 €</span><p class=desc>Angus irlandais, pain bio au sésame, laitue, cheddar, frites</p><p class="en">Irish Angus beef, organic sesame bun, cheddar, fries</p></li><li class="item"><h3>Boulettes sauce tomate à la belge</h3><span class="price">20 €</span><p class=desc>Accompagnées de frites</p><p class="en">Belgian meatballs in tomato sauce, fries</p></li><li class="item"><h3>Filet mignon de porc</h3><span class="price">28 €</span><p class=desc>Moutarde à l'ancienne, croquettes</p><p class="en">Pork tenderloin, wholegrain mustard, croquettes</p></li><li class="item"><h3>Côtes d'agneau marinées à la plancha</h3><span class="price">31 €</span><p class=desc>Petits légumes, croquettes</p><p class="en">Marinated lamb chops, vegetables, croquettes</p></li><li class="item"><h3>Jambonneau moutarde à l'ancienne</h3><span class="price">23 €</span><p class=desc>Façon du chef et ses garnitures</p><p class="en">Ham hock, wholegrain mustard, chef's style</p></li><li class="item"><h3>Suprême de volaille à la normande</h3><span class="price">24 €</span><p class=desc>Crème de champignons, croquettes, salade</p><p class="en">Chicken breast, mushroom cream, croquettes</p></li></ul>
+</section><section class="menu-sec" id="poissons">
+  <div class="menu-sec-head"><h2 class="display" data-split>Poissons</h2><p class="mono">Fish · Vis</p><figure class="ph " data-img="images/poisson.jpg|https://images.unsplash.com/photo-1766735340168-81633f36e038?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/poisson.jpg</figcaption></figure></div>
+  <ul class="items" data-stagger><li class="item"><h3>Fish & chips façon Goodwood</h3><span class="price">27 €</span><p class=desc>Salade, persil frit, citron</p><p class="en">Fish and chips, fried parsley, lemon</p></li><li class="item"><h3>Steak de thon rouge en croûte de sésame</h3><span class="price">28 €</span><p class=desc>Sauce vierge, riz basmati, petits légumes</p><p class="en">Sesame-crusted red tuna, basmati rice</p></li><li class="item"><h3>Noix de Saint-Jacques poêlées meunière</h3><span class="price">29 €</span><p class=desc>Purée, petits légumes</p><p class="en">Pan-fried scallops, mashed potato</p></li></ul>
+</section><section class="menu-sec" id="moules">
+  <div class="menu-sec-head"><h2 class="display" data-split>Moules</h2><p class="mono">Mussels · Mosselen</p><figure class="ph " data-img="images/moules.jpg|https://images.unsplash.com/photo-1715249792920-bfe1a3b9d79e?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/moules.jpg</figcaption></figure></div>
+  <ul class="items" data-stagger><li class="item"><h3>Moules marinières <span class="badge">Signature</span></h3><span class="price">26,50 €</span><p class=desc>Frites</p><p class="en">Mussels marinière, fries</p></li><li class="item"><h3>Moules à la crème d'ail</h3><span class="price">28,50 €</span><p class=desc>Frites</p><p class="en">Mussels in garlic cream, fries</p></li><li class="item"><h3>Suppléments</h3><span class="price">4 €</span><p class="desc">Frites, riz ou légumes grillés · Sauce poivre vert ou champignons</p><p class="en">Extra side or sauce</p></li></ul>
+</section><section class="menu-sec" id="desserts">
+  <div class="menu-sec-head"><h2 class="display" data-split>Desserts</h2><p class="mono">Desserts · Nagerechten</p><figure class="ph " data-img="images/gaufre.jpg|https://images.unsplash.com/photo-1562513872-634b8fae6dbe?auto=format&fit=crop&w=1600&q=80" data-unveil data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/gaufre.jpg</figcaption></figure></div>
+  <ul class="items" data-stagger><li class="item"><h3>Crème brûlée à la vanille</h3><span class="price">9 €</span><p class="en">Vanilla crème brûlée</p></li><li class="item"><h3>Dame blanche</h3><span class="price">10 €</span><p class=desc>Glace vanille, chocolat chaud maison, chantilly</p><p class="en">Vanilla ice cream, hot chocolate, cream</p></li><li class="item"><h3>Gaufre de Bruxelles <span class="badge">Signature</span></h3><span class="price">10 €</span><p class=desc>Boule de glace vanille, chocolat, chantilly</p><p class="en">Brussels waffle, vanilla ice cream</p></li><li class="item"><h3>Moelleux au chocolat</h3><span class="price">10 €</span><p class=desc>Et sa boule de vanille</p><p class="en">Chocolate lava cake, vanilla ice cream</p></li></ul>
+</section><section class="menu-sec" id="enfants">
+  <div class="menu-sec-head"><h2 class="display" data-split>Menu enfant</h2><p class="mono">Kids · Kinder · moins de 12 ans</p></div>
+  <div><div class="kids" data-stagger>
+    <div><h3>Boulettes sauce tomate</h3><p class="muted" style="margin:0">Avec des frites · 13 €</p></div>
+    <div><h3>Fish & chips</h3><p class="muted" style="margin:0">Façon Goodwood · 13 €</p></div>
+    <div><h3>Nuggets frites</h3><p class="muted" style="margin:0">Le classique · 13 €</p></div>
+  </div></div>
+</section>
+  <p class="note">Prix en euros, service compris. Informations sur les allergènes disponibles auprès de l'équipe.</p>
+</div>
+</main>
+<footer class="footer dark">
+  <div class="wrap foot-cta">
+    <h2 class="display" data-split>Une table vous attend.</h2>
+    <div class="foot-cta-actions"><a class="btn" href="reservation.html" data-magnetic>Réserver une table <span class="arr">→</span></a><span class="foot-phone"><span class="mono">ou par téléphone</span><b>02 889 02 10</b></span></div>
+  </div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="index.html" aria-label="The Brothers Brasserie, accueil"><b>The Brothers</b><span>BRASSERIE · BRUXELLES</span></a>
+      <p>Brasserie belge au cœur de Bruxelles. Cuisine maison, bières au fût et cocktails, midi et soir.</p>
+      <div class="socials"><a href="https://www.instagram.com/thebrothersbrasserie/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a><a href="https://www.facebook.com/thebrothers.brasserie" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.2V6.6c0-.7.4-1.1 1.2-1.1H17V2.2h-2.6C11.6 2.2 10.4 4 10.4 6.4v1.8H8v3.3h2.4V22H14V11.5h2.8l.4-3.3H14z"/></svg></a></div>
+    </div>
+    <div class="foot-col foot-nav"><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="carte.html">La Carte</a></li><li><a href="bar.html">Le Bar</a></li><li><a href="evenements.html">Événements</a></li><li><a href="reservation.html">Réserver</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="foot-col foot-contact"><h4>Nous trouver</h4><ul><li>Rue Chair et Pain 7<br>1000 Bruxelles</li><li>02 889 02 10</li><li>thebrothersbrasserie@<wbr>gmail.com</li><li><a href="https://www.google.com/maps/search/?api=1&query=The+Brothers+Brasserie+Rue+Chair+et+Pain+7+1000+Bruxelles" target="_blank" rel="noopener" style="color:var(--brass)">Itinéraire ↗</a></li></ul></div>
+    <div class="foot-col foot-hcol"><h4>Horaires</h4><ul class="foot-hours"><li><span>Lundi</span><span>12–15h · 18–22h</span></li><li><span>Mardi</span><span>12–15h · 18–22h</span></li><li><span>Mercredi</span><span>Fermé</span></li><li><span>Jeudi</span><span>12–15h · 18–22h</span></li><li><span>Vendredi</span><span>12h–22h</span></li><li><span>Samedi</span><span>12h–22h</span></li><li><span>Dimanche</span><span>12h–22h</span></li></ul><p style="margin-top:16px"><span class="status" data-status></span></p></div>
+  </div>
+  <div class="wrap foot-bar"><span>© 2026 The Brothers Brasserie · Tous droits réservés</span><span>Site réalisé par Benjamin Monteiro</span><a class="to-top" href="#top">Haut de page <span aria-hidden="true">↑</span></a></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

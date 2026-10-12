@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réserver · The Brothers Brasserie</title>
+<meta name="description" content="Réservez votre table en ligne à The Brothers Brasserie, Rue Chair et Pain 7, Bruxelles.">
+<meta name="theme-color" content="#f8f3ea">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Gloock&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{if(sessionStorage.getItem('tb-v'))document.documentElement.classList.add('visited');sessionStorage.setItem('tb-v','1')}catch(e){}</script>
+</head>
+<body class="page-reservation">
+<div class="curtain" aria-hidden="true"><div class="curtain-inner"><svg class="glass-loader" viewBox="0 0 46 70" aria-hidden="true"><defs><clipPath id="glc"><path d="M5 3h36l-4 63H9z"/></clipPath></defs><g clip-path="url(#glc)"><rect class="gl-fill" x="0" y="10" width="46" height="60" fill="#140d08"/></g><path d="M5 3h36l-4 63H9z" fill="none" stroke="#140d08" stroke-width="2"/></svg><span class="curtain-word">The Brothers</span><span class="mono">Brasserie · Bruxelles</span></div></div>
+<div id="top"></div>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="index.html" aria-label="The Brothers Brasserie, accueil"><b>The Brothers</b><span>BRASSERIE · BRUXELLES</span></a>
+    <nav class="nav-links" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="carte.html">La Carte</a><a href="bar.html">Le Bar</a><a href="evenements.html">Événements</a><a href="contact.html">Contact</a></nav>
+    <span class="status" data-status>Lun–mar, jeu 12h–15h · 18h–22h</span>
+    <a class="btn" href="reservation.html" data-magnetic>Réserver</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="overlay"><span></span><span></span></button>
+  </div>
+</header>
+<div class="overlay dark" id="overlay" aria-hidden="true">
+  <nav aria-label="Menu mobile"><a href="index.html"><span>Accueil</span></a><a href="carte.html"><span>La Carte</span></a><a href="bar.html"><span>Le Bar</span></a><a href="evenements.html"><span>Événements</span></a><a href="contact.html"><span>Contact</span></a></nav>
+  <a class="btn" href="reservation.html">Réserver une table <span class="arr">→</span></a>
+  <div class="overlay-foot"><span class="status" data-status></span><span class="mono muted">02 889 02 10</span></div>
+</div>
+<main id="contenu">
+
+<section class="resa">
+  <div class="resa-visual dark">
+    <figure class="ph " data-img="images/resa.jpg|https://images.unsplash.com/photo-1758705477547-1070b9fac15d?auto=format&fit=crop&w=1600&q=80" data-parallax><div class="ph-inner"></div><figcaption class="ph-tag">images/resa.jpg</figcaption></figure>
+    <div class="resa-visual-in">
+      <h1 class="display" data-split="load">Réserver</h1>
+      <p class="lede" data-reveal=".1">Une table chez The Brothers, midi ou soir, à deux pas de la Grand-Place.</p>
+      <ul class="resa-facts" data-reveal=".2">
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Rue Chair et Pain 7, 1000 Bruxelles</span></li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h3.5l1.8 4.5-2.3 1.4a11 11 0 0 0 7.1 7.1l1.4-2.3L21 15.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>02 889 02 10 · pour le jour même</span></li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span class="status" data-status></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="resa-main">
+    <form class="resa-form" id="resa-form" novalidate>
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="date" id="resa-date">
+      <input type="hidden" name="heure" id="resa-time">
+      <input type="hidden" name="couverts" id="resa-guests-input" value="2">
+
+      <fieldset class="rstep is-done" id="step-guests">
+        <legend><span class="rstep-n">1</span>Combien de personnes ?</legend>
+        <div class="gchips" role="group" aria-label="Nombre de couverts"><button type="button" data-n="1" aria-pressed="false">1</button><button type="button" data-n="2" aria-pressed="true">2</button><button type="button" data-n="3" aria-pressed="false">3</button><button type="button" data-n="4" aria-pressed="false">4</button><button type="button" data-n="5" aria-pressed="false">5</button><button type="button" data-n="6" aria-pressed="false">6</button><button type="button" data-n="7" aria-pressed="false">7</button><button type="button" data-n="8" aria-pressed="false">8</button><button type="button" data-n="9" aria-pressed="false">9+</button></div>
+        <div class="big-group" id="resa-big" hidden>
+          <span class="lbl">Nombre exact</span>
+          <div class="stepper" role="group" aria-label="Nombre de couverts"><button type="button" id="resa-minus" aria-label="Une personne de moins">−</button><output id="resa-guests" aria-live="polite">9</output><button type="button" id="resa-plus" aria-label="Une personne de plus">+</button></div>
+          <p class="hint">Pour un grand groupe, pensez aussi à la <a href="evenements.html" class="link">salle privée</a>.</p>
+        </div>
+      </fieldset>
+
+      <fieldset class="rstep" id="step-date">
+        <legend><span class="rstep-n">2</span>Quel jour ?</legend>
+        <div class="days" id="resa-days" role="group" aria-label="Choisir un jour"></div>
+        <div class="other-date"><label for="resa-date-other">Une autre date</label><input type="date" id="resa-date-other"></div>
+      </fieldset>
+
+      <fieldset class="rstep" id="step-time">
+        <legend><span class="rstep-n">3</span>À quelle heure ?</legend>
+        <p class="hint" id="resa-slot-hint">Choisissez d'abord un jour.</p>
+        <div id="resa-slots" class="slots-wrap"></div>
+      </fieldset>
+
+      <fieldset class="rstep" id="step-info">
+        <legend><span class="rstep-n">4</span>Vos coordonnées</legend>
+        <div class="form">
+          <div class="field"><label for="resa-name">Nom</label><input id="resa-name" name="nom" autocomplete="name" required></div>
+          <div class="row2">
+            <div class="field"><label for="resa-phone">Téléphone</label><input id="resa-phone" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+            <div class="field"><label for="resa-email">E-mail</label><input id="resa-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
+          </div>
+          <div class="field"><span class="lbl">Préférences (facultatif)</span><div class="prefs"><label class="pchip"><input type="checkbox" name="preferences" value="Terrasse si possible"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Terrasse si possible</span></label><label class="pchip"><input type="checkbox" name="preferences" value="Chaise haute"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Chaise haute</span></label><label class="pchip"><input type="checkbox" name="preferences" value="Anniversaire"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Anniversaire</span></label><label class="pchip"><input type="checkbox" name="preferences" value="Allergie à signaler"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Allergie à signaler</span></label></div></div>
+          <div class="field"><label for="resa-msg">Un mot pour l'équipe (facultatif)</label><textarea id="resa-msg" name="message" rows="3" placeholder="Allergie, occasion, demande particulière…"></textarea></div>
+        </div>
+      </fieldset>
+
+      <div class="resa-submit">
+        <div class="resa-sum"><span class="mono">Votre réservation</span><b id="resa-summary">2 personnes</b></div>
+        <button class="btn" type="submit" data-magnetic><span class="lbl">Envoyer la demande</span> <span class="arr">→</span></button>
+      </div>
+      <p class="form-error" id="resa-error" hidden></p>
+      <p class="hint">La table est confirmée par l'équipe par téléphone ou par e-mail.</p>
+    </form>
+
+    <div class="ticket" id="resa-success" hidden>
+      <div class="ticket-head dark">
+        <svg class="check" viewBox="0 0 64 64" aria-hidden="true"><path d="M8 33 L26 50 L56 14"/></svg>
+        <div><span class="mono">Demande envoyée</span><h2 class="display">Merci <span id="rs-name"></span>.</h2></div>
+      </div>
+      <dl class="ticket-rows">
+        <div><dt>Couverts</dt><dd id="rs-guests"></dd></div>
+        <div><dt>Date</dt><dd id="rs-date"></dd></div>
+        <div><dt>Heure</dt><dd id="rs-time"></dd></div>
+        <div><dt>Lieu</dt><dd>Rue Chair et Pain 7, 1000 Bruxelles</dd></div>
+      </dl>
+      <div class="ticket-foot">
+        <p class="muted" style="margin:0">L'équipe vous confirme la table par téléphone ou par e-mail.</p>
+        <span class="demo" id="rs-demo" hidden>Aperçu : l'envoi réel s'active avec la clé Web3Forms</span>
+        <button class="btn btn--ghost" type="button" id="resa-again">Nouvelle réservation</button>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="resa-bar dark" id="resa-bar" aria-hidden="true">
+  <div><span class="mono">Votre table</span><b id="resa-bar-sum">2 pers.</b></div>
+  <button class="btn" type="button" id="resa-bar-btn">Continuer</button>
+</div>
+</main>
+<footer class="footer dark">
+  <div class="wrap foot-cta">
+    <h2 class="display" data-split>Une table vous attend.</h2>
+    <div class="foot-cta-actions"><a class="btn" href="reservation.html" data-magnetic>Réserver une table <span class="arr">→</span></a><span class="foot-phone"><span class="mono">ou par téléphone</span><b>02 889 02 10</b></span></div>
+  </div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="index.html" aria-label="The Brothers Brasserie, accueil"><b>The Brothers</b><span>BRASSERIE · BRUXELLES</span></a>
+      <p>Brasserie belge au cœur de Bruxelles. Cuisine maison, bières au fût et cocktails, midi et soir.</p>
+      <div class="socials"><a href="https://www.instagram.com/thebrothersbrasserie/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a><a href="https://www.facebook.com/thebrothers.brasserie" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.2V6.6c0-.7.4-1.1 1.2-1.1H17V2.2h-2.6C11.6 2.2 10.4 4 10.4 6.4v1.8H8v3.3h2.4V22H14V11.5h2.8l.4-3.3H14z"/></svg></a></div>
+    </div>
+    <div class="foot-col foot-nav"><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="carte.html">La Carte</a></li><li><a href="bar.html">Le Bar</a></li><li><a href="evenements.html">Événements</a></li><li><a href="reservation.html">Réserver</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="foot-col foot-contact"><h4>Nous trouver</h4><ul><li>Rue Chair et Pain 7<br>1000 Bruxelles</li><li>02 889 02 10</li><li>thebrothersbrasserie@<wbr>gmail.com</li><li><a href="https://www.google.com/maps/search/?api=1&query=The+Brothers+Brasserie+Rue+Chair+et+Pain+7+1000+Bruxelles" target="_blank" rel="noopener" style="color:var(--brass)">Itinéraire ↗</a></li></ul></div>
+    <div class="foot-col foot-hcol"><h4>Horaires</h4><ul class="foot-hours"><li><span>Lundi</span><span>12–15h · 18–22h</span></li><li><span>Mardi</span><span>12–15h · 18–22h</span></li><li><span>Mercredi</span><span>Fermé</span></li><li><span>Jeudi</span><span>12–15h · 18–22h</span></li><li><span>Vendredi</span><span>12h–22h</span></li><li><span>Samedi</span><span>12h–22h</span></li><li><span>Dimanche</span><span>12h–22h</span></li></ul><p style="margin-top:16px"><span class="status" data-status></span></p></div>
+  </div>
+  <div class="wrap foot-bar"><span>© 2026 The Brothers Brasserie · Tous droits réservés</span><span>Site réalisé par Benjamin Monteiro</span><a class="to-top" href="#top">Haut de page <span aria-hidden="true">↑</span></a></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

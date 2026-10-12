@@ -1,0 +1,37 @@
+#!/bin/bash
+# Télécharge toutes les photos du site dans le dossier images/.
+# Utilisation : ouvrir le Terminal, glisser ce fichier dedans, Entrée.
+cd "$(dirname "$0")" && mkdir -p images
+
+curl -sSL -o "images/facade.jpg" "https://images.unsplash.com/photo-1790090750433-7496353f3e80?auto=format&fit=crop&w=1600&q=80" && echo "OK facade.jpg"
+curl -sSL -o "images/hero.jpg" "https://images.unsplash.com/photo-1574521091464-a55e7763c1e5?auto=format&fit=crop&w=1600&q=80" && echo "OK hero.jpg"
+curl -sSL -o "images/burger.jpg" "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=1600&q=80" && echo "OK burger.jpg"
+curl -sSL -o "images/moules.jpg" "https://images.unsplash.com/photo-1715249792920-bfe1a3b9d79e?auto=format&fit=crop&w=1600&q=80" && echo "OK moules.jpg"
+curl -sSL -o "images/croquettes.jpg" "https://images.unsplash.com/photo-1767974963436-2208b3553561?auto=format&fit=crop&w=1600&q=80" && echo "OK croquettes.jpg"
+curl -sSL -o "images/entrecote.jpg" "https://images.unsplash.com/photo-1720701247887-cab418baa6d6?auto=format&fit=crop&w=1600&q=80" && echo "OK entrecote.jpg"
+curl -sSL -o "images/boulettes.jpg" "https://images.unsplash.com/photo-1768187067375-4cd5a79fec41?auto=format&fit=crop&w=1600&q=80" && echo "OK boulettes.jpg"
+curl -sSL -o "images/gaufre.jpg" "https://images.unsplash.com/photo-1562513872-634b8fae6dbe?auto=format&fit=crop&w=1600&q=80" && echo "OK gaufre.jpg"
+curl -sSL -o "images/salade.jpg" "https://images.unsplash.com/photo-1523218435352-1086eda36298?auto=format&fit=crop&w=1600&q=80" && echo "OK salade.jpg"
+curl -sSL -o "images/poisson.jpg" "https://images.unsplash.com/photo-1766735340168-81633f36e038?auto=format&fit=crop&w=1600&q=80" && echo "OK poisson.jpg"
+curl -sSL -o "images/terrasse.jpg" "https://images.unsplash.com/photo-1775186569675-31d4916f3c90?auto=format&fit=crop&w=1600&q=80" && echo "OK terrasse.jpg"
+curl -sSL -o "images/salle-privee.jpg" "https://images.unsplash.com/photo-1737140790906-14518fa29d1c?auto=format&fit=crop&w=1600&q=80" && echo "OK salle-privee.jpg"
+curl -sSL -o "images/salle.jpg" "https://images.unsplash.com/photo-1553487164-47dd19cf0a72?auto=format&fit=crop&w=1600&q=80" && echo "OK salle.jpg"
+curl -sSL -o "images/cocktail.jpg" "https://images.unsplash.com/photo-1568608275764-7a16d7fdfc56?auto=format&fit=crop&w=1600&q=80" && echo "OK cocktail.jpg"
+curl -sSL -o "images/mojito.jpg" "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=1600&q=80" && echo "OK mojito.jpg"
+curl -sSL -o "images/mojito-royal.jpg" "https://images.unsplash.com/photo-1632995561645-86a7777d3e7a?auto=format&fit=crop&w=1600&q=80" && echo "OK mojito-royal.jpg"
+curl -sSL -o "images/mojito-sans-alcool.jpg" "https://images.unsplash.com/photo-1653542772393-71ffa417b1c4?auto=format&fit=crop&w=1600&q=80" && echo "OK mojito-sans-alcool.jpg"
+curl -sSL -o "images/biere.jpg" "https://images.unsplash.com/photo-1546622891-02c72c1537b6?auto=format&fit=crop&w=1600&q=80" && echo "OK biere.jpg"
+curl -sSL -o "images/bar.jpg" "https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=1600&q=80" && echo "OK bar.jpg"
+curl -sSL -o "images/galerie-1.jpg" "https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=1600&q=80" && echo "OK galerie-1.jpg"
+curl -sSL -o "images/galerie-2.jpg" "https://images.unsplash.com/photo-1607179780236-b5d5eed4f6d6?auto=format&fit=crop&w=1600&q=80" && echo "OK galerie-2.jpg"
+curl -sSL -o "images/galerie-3.jpg" "https://images.unsplash.com/photo-1695406091840-5b820df68db0?auto=format&fit=crop&w=1600&q=80" && echo "OK galerie-3.jpg"
+curl -sSL -o "images/galerie-4.jpg" "https://images.unsplash.com/photo-1622140739492-f82f386260b5?auto=format&fit=crop&w=1600&q=80" && echo "OK galerie-4.jpg"
+curl -sSL -o "images/galerie-5.jpg" "https://images.unsplash.com/photo-1766050590622-cbec5103294b?auto=format&fit=crop&w=1600&q=80" && echo "OK galerie-5.jpg"
+curl -sSL -o "images/valentin.jpg" "https://images.unsplash.com/photo-1536060311845-1278df8e1010?auto=format&fit=crop&w=1600&q=80" && echo "OK valentin.jpg"
+curl -sSL -o "images/nouvel-an.jpg" "https://images.unsplash.com/photo-1580657274234-7339717f4541?auto=format&fit=crop&w=1600&q=80" && echo "OK nouvel-an.jpg"
+curl -sSL -o "images/anniversaire.jpg" "https://images.unsplash.com/photo-1700673158560-e51b3058f73d?auto=format&fit=crop&w=1600&q=80" && echo "OK anniversaire.jpg"
+curl -sSL -o "images/entreprise.jpg" "https://images.unsplash.com/photo-1581954548122-4dff8989c0f7?auto=format&fit=crop&w=1600&q=80" && echo "OK entreprise.jpg"
+curl -sSL -o "images/table-fete.jpg" "https://images.unsplash.com/photo-1758705477547-1070b9fac15d?auto=format&fit=crop&w=1600&q=80" && echo "OK table-fete.jpg"
+curl -sSL -o "images/resa.jpg" "https://images.unsplash.com/photo-1758705477547-1070b9fac15d?auto=format&fit=crop&w=1600&q=80" && echo "OK resa.jpg"
+
+echo "Terminé : les photos sont dans le dossier images/"

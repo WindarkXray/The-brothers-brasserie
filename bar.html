@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le Bar · The Brothers Brasserie</title>
+<meta name="description" content="Bières belges au fût et en bouteille, cocktails, vins et apéritifs à The Brothers Brasserie, Bruxelles.">
+<meta name="theme-color" content="#f8f3ea">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Gloock&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{if(sessionStorage.getItem('tb-v'))document.documentElement.classList.add('visited');sessionStorage.setItem('tb-v','1')}catch(e){}</script>
+</head>
+<body class="page-bar">
+<div class="curtain" aria-hidden="true"><div class="curtain-inner"><svg class="glass-loader" viewBox="0 0 46 70" aria-hidden="true"><defs><clipPath id="glc"><path d="M5 3h36l-4 63H9z"/></clipPath></defs><g clip-path="url(#glc)"><rect class="gl-fill" x="0" y="10" width="46" height="60" fill="#140d08"/></g><path d="M5 3h36l-4 63H9z" fill="none" stroke="#140d08" stroke-width="2"/></svg><span class="curtain-word">The Brothers</span><span class="mono">Brasserie · Bruxelles</span></div></div>
+<div id="top"></div>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="index.html" aria-label="The Brothers Brasserie, accueil"><b>The Brothers</b><span>BRASSERIE · BRUXELLES</span></a>
+    <nav class="nav-links" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="carte.html">La Carte</a><a href="bar.html" aria-current="page">Le Bar</a><a href="evenements.html">Événements</a><a href="contact.html">Contact</a></nav>
+    <span class="status" data-status>Lun–mar, jeu 12h–15h · 18h–22h</span>
+    <a class="btn" href="reservation.html" data-magnetic>Réserver</a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="overlay"><span></span><span></span></button>
+  </div>
+</header>
+<div class="overlay dark" id="overlay" aria-hidden="true">
+  <nav aria-label="Menu mobile"><a href="index.html"><span>Accueil</span></a><a href="carte.html"><span>La Carte</span></a><a href="bar.html" aria-current="page"><span>Le Bar</span></a><a href="evenements.html"><span>Événements</span></a><a href="contact.html"><span>Contact</span></a></nav>
+  <a class="btn" href="reservation.html">Réserver une table <span class="arr">→</span></a>
+  <div class="overlay-foot"><span class="status" data-status></span><span class="mono muted">02 889 02 10</span></div>
+</div>
+<main id="contenu">
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Bières, cocktails & vins</p>
+    <h1 class="display h1" data-split="load">Le Bar</h1>
+    <div class="row"><p class="lede" data-reveal=".1">Quatre bières belges à la pression, dix-huit en bouteille et des cocktails maison.</p><p data-reveal=".2">Choisissez la taille du verre, on vous montre le prix.</p></div>
+  </div>
+</section>
+<div class="page-banner"><figure class="ph " data-img="images/bar.jpg|https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/bar.jpg</figcaption></figure></div>
+<section class="section--tight dark">
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+      <h2 class="display h2" data-split>Au fût</h2>
+      <div class="size-toggle" role="group" aria-label="Taille du verre"><span class="size-ink"></span><button data-size="25" aria-pressed="true">25 cl</button><button data-size="50" aria-pressed="false">50 cl</button><button data-size="100" aria-pressed="false">1 litre</button></div>
+    </div>
+    <div class="taps"><article class="tap" data-prices='{"25": 5, "50": 9, "100": 16}'>
+  <svg viewBox="0 0 100 160" aria-hidden="true"><defs><clipPath id="gl0"><path d="M18 8 L82 8 L73 150 Q72 156 65 156 L35 156 Q28 156 27 150 Z"/></clipPath>
+    <linearGradient id="lq0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6eedb"/><stop offset=".045" stop-color="#efe3c4"/><stop offset=".06" stop-color="#f4cf62"/><stop offset=".6" stop-color="#d79a1c"/></linearGradient></defs>
+    <g clip-path="url(#gl0)"><rect width="100" height="160" fill="rgba(241,231,208,.04)"/><rect class="tap-liquid" x="0" y="100" width="100" height="220" fill="url(#lq0)"/></g>
+    <path d="M18 8 L82 8 L73 150 Q72 156 65 156 L35 156 Q28 156 27 150 Z" fill="none" stroke="rgba(241,231,208,.55)" stroke-width="1.5"/><path d="M26 18 L22 120" stroke="rgba(241,231,208,.25)" stroke-width="2" stroke-linecap="round"/></svg>
+  <h3>Stella Artois</h3><span class="abv">5,2 % · <span class="tvol">25 cl</span></span><span class="tprice">5 €</span>
+</article><article class="tap" data-prices='{"25": 5, "50": 9, "100": 16}'>
+  <svg viewBox="0 0 100 160" aria-hidden="true"><defs><clipPath id="gl1"><path d="M18 8 L82 8 L73 150 Q72 156 65 156 L35 156 Q28 156 27 150 Z"/></clipPath>
+    <linearGradient id="lq1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6eedb"/><stop offset=".045" stop-color="#efe3c4"/><stop offset=".06" stop-color="#f6e3a6"/><stop offset=".6" stop-color="#d9b45a"/></linearGradient></defs>
+    <g clip-path="url(#gl1)"><rect width="100" height="160" fill="rgba(241,231,208,.04)"/><rect class="tap-liquid" x="0" y="100" width="100" height="220" fill="url(#lq1)"/></g>
+    <path d="M18 8 L82 8 L73 150 Q72 156 65 156 L35 156 Q28 156 27 150 Z" fill="none" stroke="rgba(241,231,208,.55)" stroke-width="1.5"/><path d="M26 18 L22 120" stroke="rgba(241,231,208,.25)" stroke-width="2" stroke-linecap="round"/></svg>
+  <h3>Hoegaarden Blanche</h3><span class="abv">4,9 % · <span class="tvol">25 cl</span></span><span class="tprice">5 €</span>
+</article><article class="tap" data-prices='{"25": 6, "50": 10, "100": 18}'>
+  <svg viewBox="0 0 100 160" aria-hidden="true"><defs><clipPath id="gl2"><path d="M18 8 L82 8 L73 150 Q72 156 65 156 L35 156 Q28 156 27 150 Z"/></clipPath>
+    <linearGradient id="lq2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6eedb"/><stop offset=".045" stop-color="#efe3c4"/><stop offset=".06" stop-color="#f2b33d"/><stop offset=".6" stop-color="#b8650f"/></linearGradient></defs>
+    <g clip-path="url(#gl2)"><rect width="100" height="160" fill="rgba(241,231,208,.04)"/><rect class="tap-liquid" x="0" y="100" width="100" height="220" fill="url(#lq2)"/></g>
+    <path d="M18 8 L82 8 L73 150 Q72 156 65 156 L35 156 Q28 156 27 150 Z" fill="none" stroke="rgba(241,231,208,.55)" stroke-width="1.5"/><path d="M26 18 L22 120" stroke="rgba(241,231,208,.25)" stroke-width="2" stroke-linecap="round"/></svg>
+  <h3>Leffe Blonde</h3><span class="abv">6,6 % · <span class="tvol">25 cl</span></span><span class="tprice">6 €</span>
+</article><article class="tap" data-prices='{"25": 6, "50": 10, "100": 18}'>
+  <svg viewBox="0 0 100 160" aria-hidden="true"><defs><clipPath id="gl3"><path d="M18 8 L82 8 L73 150 Q72 156 65 156 L35 156 Q28 156 27 150 Z"/></clipPath>
+    <linearGradient id="lq3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6eedb"/><stop offset=".045" stop-color="#efe3c4"/><stop offset=".06" stop-color="#efa93a"/><stop offset=".6" stop-color="#a8580c"/></linearGradient></defs>
+    <g clip-path="url(#gl3)"><rect width="100" height="160" fill="rgba(241,231,208,.04)"/><rect class="tap-liquid" x="0" y="100" width="100" height="220" fill="url(#lq3)"/></g>
+    <path d="M18 8 L82 8 L73 150 Q72 156 65 156 L35 156 Q28 156 27 150 Z" fill="none" stroke="rgba(241,231,208,.55)" stroke-width="1.5"/><path d="M26 18 L22 120" stroke="rgba(241,231,208,.25)" stroke-width="2" stroke-linecap="round"/></svg>
+  <h3>Tripel Karmeliet</h3><span class="abv">8,4 % · <span class="tvol">25 cl</span></span><span class="tprice">6 €</span>
+</article></div>
+    <div class="tasting" data-reveal><div><span class="mono muted">Dégustation</span><br><b>4 bières belges à découvrir</b></div><span class="price">14 €</span></div>
+  </div>
+</section>
+<section class="section rule">
+  <div class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+      <div><p class="eyebrow">En bouteille</p><h2 class="display h2" data-split>Trappistes & spéciales</h2></div>
+      <div class="sorter" role="group" aria-label="Trier les bières"><span class="mono muted">Trier</span><button data-sort="abv-desc" aria-pressed="false">Plus forte</button><button data-sort="abv" aria-pressed="false">Plus légère</button><button data-sort="name" aria-pressed="false">A → Z</button></div>
+    </div>
+    <div class="bottles"><div class="bottle" data-name="Jupiler" data-abv="5.2"><span class="n">Jupiler</span><span class="bar-track"><i style="--abv:5.2"></i></span><span class="v">5,2 %</span><span class="s">25 cl</span><span class="p">5 €</span></div><div class="bottle na" data-name="Jupiler 0,0" data-abv="0"><span class="n">Jupiler 0,0</span><span class="bar-track"><i style="--abv:0.25"></i></span><span class="v">0,0 %</span><span class="s">25 cl</span><span class="p">5 €</span></div><div class="bottle" data-name="Hoegaarden Rosée" data-abv="3"><span class="n">Hoegaarden Rosée</span><span class="bar-track"><i style="--abv:3"></i></span><span class="v">3 %</span><span class="s">25 cl</span><span class="p">5 €</span></div><div class="bottle" data-name="Kriek Mort Subite" data-abv="4"><span class="n">Kriek Mort Subite</span><span class="bar-track"><i style="--abv:4"></i></span><span class="v">4 %</span><span class="s">25 cl</span><span class="p">5 €</span></div><div class="bottle na" data-name="Leffe Blonde 0,0" data-abv="0"><span class="n">Leffe Blonde 0,0</span><span class="bar-track"><i style="--abv:0.25"></i></span><span class="v">0,0 %</span><span class="s">33 cl</span><span class="p">5 €</span></div><div class="bottle" data-name="Leffe Brune" data-abv="6.5"><span class="n">Leffe Brune</span><span class="bar-track"><i style="--abv:6.5"></i></span><span class="v">6,5 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Kwak" data-abv="8.4"><span class="n">Kwak</span><span class="bar-track"><i style="--abv:8.4"></i></span><span class="v">8,4 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Duvel" data-abv="8.5"><span class="n">Duvel</span><span class="bar-track"><i style="--abv:8.5"></i></span><span class="v">8,5 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Omer" data-abv="8"><span class="n">Omer</span><span class="bar-track"><i style="--abv:8"></i></span><span class="v">8 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Chimay Bleue" data-abv="9"><span class="n">Chimay Bleue</span><span class="bar-track"><i style="--abv:9"></i></span><span class="v">9 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Chimay Rouge" data-abv="7"><span class="n">Chimay Rouge</span><span class="bar-track"><i style="--abv:7"></i></span><span class="v">7 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Chimay Blanche" data-abv="8"><span class="n">Chimay Blanche</span><span class="bar-track"><i style="--abv:8"></i></span><span class="v">8 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Grimbergen Brune" data-abv="6.5"><span class="n">Grimbergen Brune</span><span class="bar-track"><i style="--abv:6.5"></i></span><span class="v">6,5 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Grimbergen Blonde" data-abv="6.7"><span class="n">Grimbergen Blonde</span><span class="bar-track"><i style="--abv:6.7"></i></span><span class="v">6,7 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Corne Blonde" data-abv="5.9"><span class="n">Corne Blonde</span><span class="bar-track"><i style="--abv:5.9"></i></span><span class="v">5,9 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Corne Triple" data-abv="10"><span class="n">Corne Triple</span><span class="bar-track"><i style="--abv:10"></i></span><span class="v">10 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Westmalle Dubbel" data-abv="7"><span class="n">Westmalle Dubbel</span><span class="bar-track"><i style="--abv:7"></i></span><span class="v">7 %</span><span class="s">33 cl</span><span class="p">7 €</span></div><div class="bottle" data-name="Westmalle Tripel" data-abv="9.5"><span class="n">Westmalle Tripel</span><span class="bar-track"><i style="--abv:9.5"></i></span><span class="v">9,5 %</span><span class="s">33 cl</span><span class="p">7 €</span></div></div>
+  </div>
+</section>
+<section class="section rule">
+  <div class="wrap">
+    <p class="eyebrow">Cocktails</p>
+    <h2 class="display h2" data-split style="margin-bottom:48px">Menthe fraîche & citron vert.</h2>
+    <div class="cocktails" data-stagger>
+      <article class="cocktail"><figure class="ph " data-img="images/mojito.jpg|https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/mojito.jpg</figcaption></figure><h3>Mojito</h3><p>Rhum, citron vert, sucre roux, eau gazeuse, menthe fraîche</p><span class="price">12 €</span></article>
+      <article class="cocktail"><figure class="ph " data-img="images/mojito-royal.jpg|https://images.unsplash.com/photo-1632995561645-86a7777d3e7a?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/mojito-royal.jpg</figcaption></figure><h3>Mojito Royal</h3><p>Rhum, citron vert, sucre roux, champagne, menthe fraîche</p><span class="price">14 €</span></article>
+      <article class="cocktail"><figure class="ph " data-img="images/mojito-sans-alcool.jpg|https://images.unsplash.com/photo-1653542772393-71ffa417b1c4?auto=format&fit=crop&w=1600&q=80" ><div class="ph-inner"></div><figcaption class="ph-tag">images/mojito-sans-alcool.jpg</figcaption></figure><h3>Mojito sans alcool</h3><p>Menthe fraîche, citron vert, sucre roux, eau pétillante</p><span class="price">8 €</span></article>
+    </div>
+  </div>
+</section>
+<section class="section rule">
+  <div class="wrap lists">
+    <div class="list"><h3>Apéritifs</h3><ul><li><span>Martini rouge ou blanc</span><span>7 €</span></li><li><span>Porto rouge ou blanc</span><span>7 €</span></li><li><span>Gancia</span><span>7 €</span></li><li><span>Kir vin blanc</span><span>7 €</span></li><li><span>Picon vin blanc</span><span>7 €</span></li><li><span>Pineau des Charentes</span><span>7 €</span></li><li><span>Coupe de cava maison</span><span>9 €</span></li><li><span>Aperol Spritz</span><span>11 €</span></li><li><span>Coupe de champagne</span><span>12 €</span></li><li><span>Kir Royal</span><span>13 €</span></li><li><span>Gin tonic</span><span>9 €</span></li><li><span>Campari orange</span><span>9 €</span></li><li><span>Vodka, rhum, tequila, Ricard</span><span>9 €</span></li><li><span>Whisky (Johnnie Walker, Jack Daniel's, J&B)</span><span>9 €</span></li></ul></div>
+    <div class="list"><h3>Vins</h3><ul><li class="sub">Vins maison · 15 cl / 50 cl / bouteille</li><li><span>Rouge, blanc ou rosé</span><span>6 / 17 / 27 €</span></li><li class="sub">Blancs</li><li><span>Chardonnay</span><span>30 €</span></li><li><span>Mâcon-Villages</span><span>30 €</span></li><li><span>Entre-deux-Mers, Château Roc Parabelle</span><span>30 €</span></li><li><span>Pinot gris</span><span>40 €</span></li><li><span>Chablis</span><span>45 €</span></li><li class="sub">Rosés</li><li><span>Côtes-du-Rhône</span><span>30 €</span></li><li><span>Vin de Provence</span><span>35 €</span></li><li class="sub">Rouges</li><li><span>Côtes-du-Rhône</span><span>30 €</span></li><li><span>Bordeaux Supérieur</span><span>34 €</span></li><li><span>Haut-Médoc, Château Lamotte</span><span>40 €</span></li><li><span>Pinot noir</span><span>40 €</span></li><li><span>Montagne-Saint-Émilion</span><span>45 €</span></li><li><span>Saint-Estèphe</span><span>45 €</span></li><li><span>Pomerol</span><span>55 €</span></li></ul></div>
+    <div>
+      <div class="list"><h3>Sans alcool</h3><ul><li><span>Eau plate ou pétillante 25 / 50 cl</span><span>3,50 / 6 €</span></li><li><span>Coca, Coca Zero, Sprite, Fanta</span><span>4,50 €</span></li><li><span>Canada Dry, Schweppes Tonic</span><span>4,50 €</span></li><li><span>Ice Tea, Orangina</span><span>4,50 €</span></li><li><span>Jus de fruits</span><span>4,50 €</span></li><li><span>Orange ou citron pressé</span><span>7 €</span></li></ul></div>
+      <div style="height:40px"></div>
+      <div class="list"><h3>Boissons chaudes</h3><ul><li><span>Espresso, décaféiné</span><span>4 €</span></li><li><span>Café latte, cappuccino, americano</span><span>5 €</span></li><li><span>Double espresso, thé, chocolat chaud</span><span>5 €</span></li><li><span>Vin chaud</span><span>7 €</span></li><li><span>Irish, Amaretto ou Baileys coffee</span><span>12 €</span></li></ul></div>
+      <div style="height:40px"></div>
+      <div class="list"><h3>Digestifs</h3><ul><li><span>Calvados, Cognac, Amaretto, Baileys</span><span>8 €</span></li><li><span>Grand Marnier, Get 27, Limoncello, Cointreau</span><span>8 €</span></li></ul></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer dark">
+  <div class="wrap foot-cta">
+    <h2 class="display" data-split>Une table vous attend.</h2>
+    <div class="foot-cta-actions"><a class="btn" href="reservation.html" data-magnetic>Réserver une table <span class="arr">→</span></a><span class="foot-phone"><span class="mono">ou par téléphone</span><b>02 889 02 10</b></span></div>
+  </div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="logo" href="index.html" aria-label="The Brothers Brasserie, accueil"><b>The Brothers</b><span>BRASSERIE · BRUXELLES</span></a>
+      <p>Brasserie belge au cœur de Bruxelles. Cuisine maison, bières au fût et cocktails, midi et soir.</p>
+      <div class="socials"><a href="https://www.instagram.com/thebrothersbrasserie/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.5 5.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a><a href="https://www.facebook.com/thebrothers.brasserie" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.2V6.6c0-.7.4-1.1 1.2-1.1H17V2.2h-2.6C11.6 2.2 10.4 4 10.4 6.4v1.8H8v3.3h2.4V22H14V11.5h2.8l.4-3.3H14z"/></svg></a></div>
+    </div>
+    <div class="foot-col foot-nav"><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="carte.html">La Carte</a></li><li><a href="bar.html">Le Bar</a></li><li><a href="evenements.html">Événements</a></li><li><a href="reservation.html">Réserver</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="foot-col foot-contact"><h4>Nous trouver</h4><ul><li>Rue Chair et Pain 7<br>1000 Bruxelles</li><li>02 889 02 10</li><li>thebrothersbrasserie@<wbr>gmail.com</li><li><a href="https://www.google.com/maps/search/?api=1&query=The+Brothers+Brasserie+Rue+Chair+et+Pain+7+1000+Bruxelles" target="_blank" rel="noopener" style="color:var(--brass)">Itinéraire ↗</a></li></ul></div>
+    <div class="foot-col foot-hcol"><h4>Horaires</h4><ul class="foot-hours"><li><span>Lundi</span><span>12–15h · 18–22h</span></li><li><span>Mardi</span><span>12–15h · 18–22h</span></li><li><span>Mercredi</span><span>Fermé</span></li><li><span>Jeudi</span><span>12–15h · 18–22h</span></li><li><span>Vendredi</span><span>12h–22h</span></li><li><span>Samedi</span><span>12h–22h</span></li><li><span>Dimanche</span><span>12h–22h</span></li></ul><p style="margin-top:16px"><span class="status" data-status></span></p></div>
+  </div>
+  <div class="wrap foot-bar"><span>© 2026 The Brothers Brasserie · Tous droits réservés</span><span>Site réalisé par Benjamin Monteiro</span><a class="to-top" href="#top">Haut de page <span aria-hidden="true">↑</span></a></div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
